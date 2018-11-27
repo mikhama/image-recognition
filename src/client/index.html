@@ -4,8 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Recognition</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  Hi
+  <main>
+      <h1>Image Recognition</h1>
+      <section class="progress">
+        <h2>Progress</h2>
+        <p class="progress-text" id="progress-text">Application is started. Loading model...</p>
+      </section>
+      <section class="image">
+        <h2>Image</h2>
+        <img class="selected-image" id="selected-image" src="" height="200" alt="You should load image...">
+        <input class="image-selector" type="file" name="image-selector" id="image-selector">
+      </section>
+      <section class="prediction">
+        <h2>Predicttion</h2>
+        <button class="prediction-button" id="prediction-button">Predict</button>
+        <ol class="prediction-list" id="prediction-list"></ol>
+      </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"></script>
+  <script src="./model-description.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
