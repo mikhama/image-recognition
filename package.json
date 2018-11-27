@@ -2,9 +2,9 @@
   "name": "image-recognition",
   "version": "1.0.0",
   "description": "Basic application for image recognition with TesorFlow.js",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node src/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dzmitry Tsebruk <mikhama@tut.by>",
