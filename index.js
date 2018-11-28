@@ -5,7 +5,7 @@ const progressStatus = document.querySelector('#progress-status');
 const progress = document.querySelector('#progress');
 
 const loadModel = async () => {
-  const model = await tf.loadModel('/model/model.json');
+  const model = await tf.loadModel('./model/model.json');
 
   progressStatus.innerHTML = 'Idle';
   progress.classList.remove('-loading');
