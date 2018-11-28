@@ -18,4 +18,4 @@ Another way to start server is:
 $ npm install
 $ npm start
 ```
-I also recommend read this <a href="https://medium.freecodecamp.org/get-to-know-tensorflow-js-in-7-minutes-afcd0dfd3d2f">article</a>
+I also recommend read this <a href="https://medium.freecodecamp.org/get-to-know-tensorflow-js-in-7-minutes-afcd0dfd3d2f">article</a> in order to understand how to work with TensorFlow.js.
