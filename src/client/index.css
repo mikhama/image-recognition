@@ -1,4 +1,175 @@
-.image .selected-image {
+html {
+  font-size: 10px;
+}
+
+main {
+  display: grid;
+
+  font-size: 1.6rem;
+  font-family: "Open Sans", "MS Trebuchet", sans-serif;
+  text-align: center;
+}
+
+.section {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 6rem;
+  font-family: "Teko", "Arial", sans-serif;
+}
+
+.tf-logo-link {
+  font-weight: 400;
+  color: rgb(0, 162, 255);
+}
+
+.tf-logo-part-1 {
+  color: rgb(255, 102, 0);
+}
+
+.tf-logo-part-2 {
+  color: rgb(158, 158, 158);
+}
+
+.progress {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 0;
+
+  background-color: rgb(56, 56, 56);
+}
+
+.progress-indicator {
+  height: 3rem;
+}
+
+.progress-indicator::after {
+  content: "TF";
+
   display: block;
-  height: 200px;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+
+  font-weight: 700;
+  line-height: 3rem;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(12, 245, 4);
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.progress.-loading .progress-indicator::after {
+  background-color: rgb(255, 102, 0);
+
+  animation: rotating 1s linear infinite;
+}
+
+.progress.-recognition .progress-indicator::after {
+  background-color: rgb(255, 102, 0);
+}
+
+.progress-status {
+  margin-top: 0.9rem;
+  margin-bottom: 4rem;
+
+  color: rgb(12, 245, 4);
+}
+
+.progress.-loading .progress-status,
+.progress.-recognition .progress-status {
+  color: rgb(255, 102, 0);
+}
+
+.control {
+  position: relative;
+  bottom: 3.8rem;
+}
+
+.button {
+  display: block;
+  padding: 1.9rem 2rem 1rem;
+
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1em;
+  font-family: "Teko", "Arial", sans-serif;
+  color: rgb(201, 201, 201);
+  text-transform: uppercase;
+
+  background-color: rgb(158, 158, 158);
+  border: none;
+  border-radius: 1.6rem;
+  box-shadow: 0 0.8rem rgb(116, 116, 116);
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.button:hover {
+  color: rgb(70, 70, 70);
+
+  background-color: rgb(255, 102, 0);
+}
+
+.button:active {
+  box-shadow: 0 0.3rem #666666;
+  transform: translateY(0.4rem);
+}
+
+.image-selector {
+  display: none;
+}
+
+.image-figure {
+  height: 20rem;
+  margin-bottom: 3rem;
+}
+
+.prediction-list {
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding: 0;
+
+  text-align: left;
+}
+
+.prediction-list-item {
+  display: grid;
+  padding: 3rem 2rem 0;
+
+  font-size: 2.1rem;
+  line-height: 1.3em;
+  color: #8b8b8b;
+
+  grid-column-gap: 2rem;
+  grid-template-columns: calc(100% - 8rem) auto;
+}
+
+.prediction-list-item:not(:first-child) {
+  padding-left: 5rem;
+}
+
+.prediction-list-item:first-child {
+  font-size: 4.7rem;
+  line-height: 0.9em;
+  font-family: "Teko", "Arial", sans-serif;
+  color: rgb(255, 102, 0);
+}
+
+.prediction-item-name::first-letter {
+  text-transform: uppercase;
 }
