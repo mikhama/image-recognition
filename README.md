@@ -4,7 +4,7 @@
 
 ### Instruction for users
 
-If you would like use it and you don't need any code change you might see it on my <a href="https://mikhama.github.io/image-recognition/" target="_blank">gh-pages</a>.
+If you would like use it and you don't need any code change you might see it on my <a href="https://mikhama.github.io/image-recognition/">gh-pages</a>.
 
 ### Instruction for developers
 
@@ -18,8 +18,5 @@ Another way to start server is:
 $ npm install
 $ npm start
 ```
-<<<<<<< HEAD
+
 I also recommend read this <a href="https://medium.freecodecamp.org/get-to-know-tensorflow-js-in-7-minutes-afcd0dfd3d2f">article</a> in order to understand how to work with TensorFlow.js.
-=======
-I also recommend read this <a href="https://medium.freecodecamp.org/get-to-know-tensorflow-js-in-7-minutes-afcd0dfd3d2f" target="_blank">article</a> in order to understand how to work with TensorFlow.js.
->>>>>>> e669a5e5fa9c75b0726a9c6c82be3c874b3a3735
