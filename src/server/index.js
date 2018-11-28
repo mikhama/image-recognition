@@ -10,6 +10,6 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname, '../client')));
 
-app.listen(8081, () => {
-  global.console.log('Serving at port 8081');
+app.listen(9000, () => {
+  global.console.log('Serving at port 9000');
 });
