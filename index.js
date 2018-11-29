@@ -29,7 +29,7 @@ const selectImage = async () => {
 
       setTimeout(() => {
         resolve(reader);
-      }, 0);
+      }, 500);
     };
 
     const file = imageSelector.files[0];
