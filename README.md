@@ -20,3 +20,7 @@ $ npm start
 ```
 
 I also recommend read this <a href="https://medium.freecodecamp.org/get-to-know-tensorflow-js-in-7-minutes-afcd0dfd3d2f">article</a> in order to understand how to work with TensorFlow.js.
+
+### Note
+
+This demo application uses some ES7 features like async-functions. And it might not work in some browsers, such as browsers for mobile, old browsers, etc.
