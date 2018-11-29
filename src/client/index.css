@@ -138,6 +138,10 @@ main {
   margin-bottom: 3rem;
 }
 
+.selected-image {
+  max-width: 40rem;
+}
+
 .prediction-list {
   max-width: 40rem;
   margin: 0 auto;

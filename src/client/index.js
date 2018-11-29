@@ -5,7 +5,7 @@ const progressStatus = document.querySelector('#progress-status');
 const progress = document.querySelector('#progress');
 
 const loadModel = async () => {
-  const model = await tf.loadModel('/model/model.json');
+  const model = await tf.loadModel('./model/model.json');
 
   progressStatus.innerHTML = 'Idle';
   progress.classList.remove('-loading');
@@ -21,21 +21,21 @@ const selectImage = async () => {
 
   return new Promise((resolve) => {
     const reader = new FileReader();
-
     reader.onload = () => {
       const imgUrl = reader.result;
       selectedImage.setAttribute('src', imgUrl);
 
       predictionList.innerHTML = '';
 
-      resolve(reader);
+      setTimeout(() => {
+        resolve(reader);
+      }, 500);
     };
 
     const file = imageSelector.files[0];
     reader.readAsDataURL(file);
   });
 };
-
 
 const predict = async () => {
   const model = await loadedModel;
@@ -66,6 +66,8 @@ const predict = async () => {
   progressStatus.innerHTML = 'Idle';
 };
 
-imageSelector.addEventListener('input', async () => {
-  selectImage().then(() => predict());
+imageSelector.addEventListener('change', () => {
+  selectImage().then(() => {
+    predict();
+  });
 });
