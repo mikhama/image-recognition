@@ -24,3 +24,11 @@ I also recommend read this <a href="https://medium.freecodecamp.org/get-to-know-
 ### Note
 
 This demo application uses some ES7 features like async-functions. And it might not work in some browsers, such as browsers for mobile, old browsers, etc.
+
+### Supported Browsers
+
+I tested this application in the next browsers (where it should work):
+
+1. Chrome 70.0.3538.102
+2. Safari 11.1.2
+3. Firefox 63.0.1
